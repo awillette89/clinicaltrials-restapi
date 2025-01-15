@@ -28,11 +28,6 @@ if response.status_code == 200:
             study_id = link.split("study/")[1].split("?")[0]
             study_ids.append(study_id)
 
-    # Print study IDs and their count
-    print("Study IDs that begin with 'NCT':")
-    for study_id in study_ids:
-        print(study_id)
-
     print(f"\nTotal count of study IDs: {len(study_ids)}")
     
     # Define the API endpoint for fetching study information
